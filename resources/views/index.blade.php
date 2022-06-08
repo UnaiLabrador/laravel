@@ -11,6 +11,9 @@
                 {{ session()->get('success') }}
             </div><br />
         @endif
+        <button class="btn btn-primary">
+            <a href="{{ route('games.create') }}" class="text-white text-decoration-none">Add Game</a>
+        </button>
         <table class="table table-striped">
             <thead>
                 <tr>
@@ -22,7 +25,7 @@
             </thead>
             <tbody>
                 @foreach ($games as $game)
-                    <tr>
+                    <tr class="align-items-center">
                         <td>{{ $game->id }}</td>
                         <td>{{ $game->name }}</td>
                         <td>{{ $game->price }}</td>

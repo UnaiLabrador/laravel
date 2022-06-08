@@ -29,7 +29,9 @@
                     <label for="cases">Price :</label>
                     <input type="text" class="form-control" name="price" />
                 </div>
-                <button type="submit" class="btn btn-primary">Add Game</button>
+                <button type="submit" class="btn btn-primary mt-4">Add Game</button>
+                <button class="btn btn-warning mt-4"><a href="{{ route('games.index') }}"
+                        class="text-decoration-none">Cancel</a></button>
             </form>
         </div>
     </div>
